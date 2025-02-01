@@ -50,9 +50,11 @@
             <td>{{ task.description }}</td>
             <td>{{ task.creation_date.strftime('%d/%m/%Y %H:%M') }}</td>
             <td>{{ task.completion_date.strftime('%d/%m/%Y %H:%M') }}</td>
+            <!--
             <td>
                 <a href="{{ url_for('delete', id=task.id) }}" class="btn btn-danger">Deletar</a>
             </td>
+            -->
         </tr>
         {% endfor %}
     </tbody>
