@@ -19,13 +19,7 @@
             <td>{{ task.name }}</td>
             <td>{{ task.description }}</td>
             <td>{{ task.creation_date.strftime('%d/%m/%Y %H:%M') }}</td>
-            <!-- 
-            <td>
-                <a href="{{ url_for('update', id=task.id) }}" class="btn btn-primary m-1">Editar</a>
-                <a href="{{ url_for('delete', id=task.id) }}" class="btn btn-danger m-1">Deletar</a>
-                <a href="{{ url_for('complete', id=task.id) }}" class="btn btn-success m-1">Concluir</a>
-            </td>
-            -->
+            
         </tr>
         {% endfor %}
     </tbody>
@@ -50,11 +44,7 @@
             <td>{{ task.description }}</td>
             <td>{{ task.creation_date.strftime('%d/%m/%Y %H:%M') }}</td>
             <td>{{ task.completion_date.strftime('%d/%m/%Y %H:%M') }}</td>
-            <!--
-            <td>
-                <a href="{{ url_for('delete', id=task.id) }}" class="btn btn-danger">Deletar</a>
-            </td>
-            -->
+            
         </tr>
         {% endfor %}
     </tbody>
